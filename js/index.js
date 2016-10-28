@@ -5,14 +5,13 @@ var Router = router.Router;
 var Route = router.Route;
 var hashHistory = router.hashHistory;
 var IndexRoute = router.IndexRoute;
+var App = require('./components/app.js');
+
 var ContactListComponent = require('./components/contact-list-container');
-
-
 
 var routes = (
     <Router history={hashHistory}>
-        <Route path="/contacts" component={App}>
-            <IndexRoute component={ContactListContainer} />
+        <Route path = "/contacts" component={ContactListComponent}>
         </Route>
     </Router>
 );

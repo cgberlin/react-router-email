@@ -1,4 +1,4 @@
-module.export = {
+export var CONTACTS = {
     0: {
         id: 0,
         name: 'Sarah Hughes',
