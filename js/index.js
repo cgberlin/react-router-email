@@ -5,8 +5,8 @@ var Router = router.Router;
 var Route = router.Route;
 var hashHistory = router.hashHistory;
 var IndexRoute = router.IndexRoute;
-var App = require('./components/app.js')
-import SpamEmailContainer from './components/SpamEmailContainer.js'
+import App from './components/app.js'
+var SpamEmailContainer = require('./components/SpamEmailContainer');
 
 
 var routes = (

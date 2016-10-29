@@ -6,4 +6,4 @@ var SpamEmailContainer = function(){
   return <EmailList emails={EMAILS} />;
 };
 
-export default SpamEmailContainer;
+module.export = SpamEmailContainer;
