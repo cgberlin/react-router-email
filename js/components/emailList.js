@@ -1,5 +1,5 @@
 var React = require('react');
-import Email from './email.js'
+import Email from './email'
 
 export var EmailList = function(props) {
   var emails = Object.keys(props.emails).map(function(emailId, index){

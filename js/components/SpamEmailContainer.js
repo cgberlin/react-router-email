@@ -1,9 +1,9 @@
 var React = require('react');
-import EmailList from './emailList.js'
-import EMAILS from '../emails.js'
+import EmailList from './emailList'
+import EMAILS from '../emails'
 
-var SpamEmailContainer = function(){
+var SpamEmailContainer = function(prop){
   return <EmailList emails={EMAILS} />;
 };
 
-module.export = SpamEmailContainer;
+module.exports = SpamEmailContainer;
