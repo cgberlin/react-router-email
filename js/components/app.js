@@ -4,7 +4,7 @@ var App = function(props) {
     return (
         <div>
             <h1>
-                Contacts App
+                Email App
             </h1>
             <div>
                 {props.children}

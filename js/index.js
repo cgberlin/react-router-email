@@ -6,12 +6,12 @@ var Route = router.Route;
 var hashHistory = router.hashHistory;
 var IndexRoute = router.IndexRoute;
 var App = require('./components/app.js');
+import SpamEmailContainer from './components/SpamEmailContainer.js'
 
-var ContactListComponent = require('./components/contact-list-container');
 
 var routes = (
     <Router history={hashHistory}>
-        <Route path = "/contacts" component={ContactListComponent}>
+        <Route path="/spam" component={SpamEmailContainer}>
         </Route>
     </Router>
 );
