@@ -11,10 +11,12 @@ import SpamEmailContainer from './components/SpamEmailContainer'
 
 var routes = (
     <Router history={hashHistory}>
-        <Route path="/spam" component={SpamEmailContainer} />
+        <Route path="spam" component={App}>
+          <IndexRoute component={SpamEmailContainer} />
+        </Route>
     </Router>
 );
 
 document.addEventListener('DOMContentLoaded', function() {
-    ReactDOM.render(routes, document.getElementById('app'));
+    ReactDOM.render(<Router routes = {routes} history = {hashHistory}></Router>, document.getElementById('app'));
 });

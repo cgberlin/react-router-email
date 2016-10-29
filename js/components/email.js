@@ -1,6 +1,7 @@
 import React from 'react'
 
-export var Email = function(props){
+var Email = function(props){
+  console.log(props);
   return (
     <div>
       <strong>
@@ -11,3 +12,5 @@ export var Email = function(props){
       </div>
   );
 };
+
+export default Email;
