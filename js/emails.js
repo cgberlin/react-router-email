@@ -1,6 +1,6 @@
 import React from 'react'
 
-export var Emails = {
+export var EMAILS = {
     inbox: {
         0: {
             id: 0,
