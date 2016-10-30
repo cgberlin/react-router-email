@@ -7,12 +7,16 @@ var hashHistory = router.hashHistory;
 var IndexRoute = router.IndexRoute;
 import App from './components/app.js'
 import SpamEmailContainer from './components/SpamEmailContainer'
+import InboxEmailContainer from './components/InboxEmailContainer'
 
 
 var routes = (
     <Router history={hashHistory}>
         <Route path="spam" component={App}>
           <IndexRoute component={SpamEmailContainer} />
+        </Route>
+        <Route path="inbox" component={App}>
+          <IndexRoute component={InboxEmailContainer} />
         </Route>
     </Router>
 );

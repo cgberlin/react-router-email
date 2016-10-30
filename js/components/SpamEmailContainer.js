@@ -4,4 +4,4 @@ import EMAILS from '../emails'
 
 const SpamEmailContainer = (prop) => {return <EmailList emails={EMAILS.spam} />};
 
-module.exports = SpamEmailContainer;
+export default SpamEmailContainer;
