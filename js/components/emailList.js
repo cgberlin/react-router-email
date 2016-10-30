@@ -3,11 +3,10 @@ import Email from './email'
 
 var EmailList = (props) => {
     let EmailsSelected = props.emails;
-
       return (
           <ul>
-            {EmailsSelected.map(function(title, index, content){
-              return <Email key = {index} title = {EmailsSelected[index].title} content = {EmailsSelected[index].content} />
+            {EmailsSelected.map(function(title, index, from){
+              return <Email key = {index} title = {EmailsSelected[index].title} from = {EmailsSelected[index].from} whatType = {props.whatType} id = {EmailsSelected[index].id} />
             })}
           </ul>
       );

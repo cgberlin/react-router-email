@@ -2,6 +2,6 @@ import React from 'react'
 import EmailList from './emailList'
 import EMAILS from '../emails'
 
-const InboxEmailContainer = (prop) => {return <EmailList emails={EMAILS.inbox} />};
+const InboxEmailContainer = (props) => { return <EmailList emails={EMAILS.inbox} whatType = 'inbox' />};
 
 export default InboxEmailContainer;
